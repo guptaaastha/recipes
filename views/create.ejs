@@ -1,0 +1,22 @@
+<%- include("partials/navbar"); -%>
+
+<body>
+    <h3>CREATE</h3>
+    <form action="/create" method="post">
+        <div class="form">
+            <div>
+                <textarea name="title" cols="100" rows="1" placeholder="title"></textarea>
+            </div>
+            <div>
+                <textarea name="ingredients" cols="100" rows="10" placeholder="ingredients"></textarea>
+            </div>
+            <div>
+                <textarea name="instructions" cols="100" rows="10" placeholder="instructions"></textarea>
+            </div>
+            <div style="float: right;">
+                <input id="recipes" type="submit" value="submit" />
+            </div>
+        </div>
+    </form>
+
+    <%- include("partials/footer"); -%>

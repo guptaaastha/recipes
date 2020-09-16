@@ -1,0 +1,15 @@
+<%- include("partials/navbar"); -%>
+
+<body>
+    <h3>RECIPES</h3>
+    <% recipes.forEach((recipe) =>{ %>
+    <div class="recipe">
+        <h4><strong> <%= recipe.title %> </strong></h4>
+        <h5><strong>Ingredients:</strong></h5>
+        <p><%= recipe.ingredients %></p>
+        <h5><strong>instructions:</strong></h5>
+        <p><%= recipe.instructions %></p>
+    </div>
+    <% }) %>
+
+    <%- include("partials/footer"); -%>

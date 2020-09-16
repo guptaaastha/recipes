@@ -1,0 +1,32 @@
+<%- include("partials/header"); -%>
+
+<body>
+
+    <div class="container">
+        <div class="row  description">
+            <div class="col-4">
+                <h2>save your</h2>
+                <h1>recipes</h1>
+                <div class="row buttons">
+                    <div class="col-6">
+                        <form action="/create">
+                            <input id="create" type="submit" value="create" />
+                        </form>
+                    </div>
+                    <div class="col-6">
+                        <form action="/recipes">
+                            <input id="recipes" type="submit" value="recipes" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <img src="/images/vegetables.jpg" alt="food">
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <%- include("partials/footer"); -%>
